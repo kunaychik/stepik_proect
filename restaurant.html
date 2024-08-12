@@ -3,14 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>image</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>    
-    <link rel="stylesheet" href="/css/style.css">
+    <title>Restaurant</title>
 </head>
-<body style="background-color: blueviolet;">
+<body>
     <header class="header">
         <div class="container">
             <a class="header__logo-link">
@@ -22,95 +17,105 @@
             </nav>
         </div>
     </header>
-    
+
     <main class="main">
-        <section class="search">
+        <section class="promo">
             <div class="container">
-                <input type="search" name="search__link" placeholder="Поиск по ресторанам и кухням">
+                <div class="promo__container">
+                    <h1 class="promo__title">Трактир «Пушкин»</h1>
+                    <p class="kitchen">₽₽₽ • Европейская</p>
+                    <p class="time">40 - 50 мин</p>
+                </div>
             </div>
         </section>
-
-        <section class="stores">
+        <section class="restaurant__menu">
             <div class="container">
-                <h1 class="stores__title">Рестораны в Москве</h1>
-                <ul class="stores__list">
-                    <li class="stores__item">
-                        <article class="store">
-                            <img src="image/card (1).png" alt="" class="store_image">
-                            <h3 class="store__title">Макдоналдс — Газетный</h3>
-                            <p class="store__description">₽₽ • Бургеры</p>
-                            <p class="store__time">25 - 35 мин</p>
+                <div class="menu__nav">
+                    <ul class="sections__menu">
+                        <li class="sections__menu-item">
+                            <a href="#" class="sections__menu-link">Закуски</a>
+                        </li>
+                        <li class="sections__menu-item">
+                            <a href="#" class="sections__menu-link">Салаты</a>
+                        </li>
+                        <li class="sections__menu-item">
+                            <a href="#" class="sections__menu-link">Супы</a>
+                        </li>
+                        <li class="sections__menu-item">
+                            <a href="#" class="sections__menu-link">Горячие блюда</a>
+                        </li>
+                        <li class="sections__menu-item">
+                            <a href="#" class="sections__menu-link">Гарниры</a>
+                        </li>
+                        <li class="sections__menu-item">
+                            <a href="#" class="sections__menu-link">Десерты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dishes">
+                <h2 class="dishes__title">Закуски</h2>
+                <ul class="dishes__list">
+                    <li class="dishes__item">
+                        <article class="dishe">
+                            <div class="dishe__inf">
+                                <h3 class="dishe__title">Сельдь на бородинском хлебе</h3>
+                                <p class="dishe__description">С яйцом и огурцом</p>
+                                <p class="dishe__price">240 ₽</p>
+                            </div>
+                            <img src="image/Capture.png" alt="Сельдь на бородинском хлебе" class="dishe__image">
                         </article>
                     </li>
-                    <li class="stores__item">
-                        <article class="store">
-                            <img src="image/card (6).png" alt="" class="store_image">
-                            <h3 class="store__title">DimSum & Co — ЦДМ</h3>
-                            <p class="store__description">₽ • Японская • Китайская • Азиатская</p>
-                            <p class="store__time">40 - 50 мин</p>
+                    <li class="dishes__item">
+                        <article class="dishe">
+                            <div class="dishe__inf">
+                                <h3 class="dishe__title">Соленья ассорти</h3>
+                                <p class="dishe__price">320 ₽</p>
+                            </div>
+                            <img src="image/Capture-1.png" alt="Соленья ассорти" class="dishe__image">
                         </article>
                     </li>
-                    <li class="stores__item">
-                        <article class="store">
-                            <img src="image/card (5).png" alt="" class="store_image">
-                            <h3 class="store__title">ДвижОК — Манежная</h3>
-                            <p class="store__description">₽ • Американская • Европейская</p>
-                            <p class="store__time">35 - 45 мин</p>
+                    <li class="dishes__item">
+                        <article class="dishe">
+                            <div class="dishe__inf">
+                                <h3 class="dishe__title">Грибы маринованные</h3>
+                                <p class="dishe__price">300 ₽</p>
+                            </div>
+                            <img src="image/Capture-2.png" alt="Грибы маринованные" class="dishe__image">
                         </article>
                     </li>
-                    <li class="stores__item">
-                        <article class="store">
-                            <img src="image/card (7).png" alt="" class="store_image">
-                            <h3 class="store__title">НЯ — NHA</h3>
-                            <p class="store__description">₽₽ • Вьетнамская</p>
-                            <p class="store__time">30 - 40 мин</p>
+                    <li class="dishes__item">
+                        <article class="dishe">
+                            <div class="dishe__inf">
+                                <h3 class="dishe__title">Сало домашнее с горчицей</h3>
+                                <p class="dishe__price">320 ₽</p>
+                            </div>
+                            <img src="image/Capture-3.png" alt="Сало домашнее с горчицей" class="dishe__image">
                         </article>
                     </li>
-                    <li class="stores__item">
-                        <article class="store">
-                            <img src="image/card (8).png" alt="" class="store_image">
-                            <h3 class="store__title">Точка Дзы — Цветной</h3>
-                            <p class="store__description">₽₽ • Вьетнамская</p>
-                            <p class="store__time">40 - 50 мин</p>
+                    <li class="dishes__item">
+                        <article class="dishe">
+                            <div class="dishe__inf">
+                                <h3 class="dishe__title">Малосольная семга</h3>
+                                <p class="dishe__price">390 ₽</p>
+                            </div>
+                            <img src="image/Capture-4.png" alt="Малосольная семга" class="dishe__image">
                         </article>
                     </li>
-                    <li class="stores__item">
-                        <article class="store">
-                            <img src="image/card (9).png" alt="" class="store_image">
-                            <h3 class="store__title">Cinnabon</h3>
-                            <p class="store__description">₽ • Выпечка • Десерты • Капкейки</p>
-                            <p class="store__time">25 - 35 мин</p>
-                        </article>
-                    </li>
-                    <li class="stores__item">
-                        <article class="store">
-                            <img src="image/card (2).png" alt="" class="store_image">
-                            <h3 class="store__title">PIZZELOVE</h3>
-                            <p class="store__description">₽₽ • Пицца</p>
-                            <p class="store__time">15 - 25 мин</p>
-                        </article>
-                    </li>
-                    <li class="stores__item">
-                        <article class="store">
-                            <img src="image/card (3).png" alt="" class="store_image">
-                            <h3 class="store__title">Zю кафе — Тверская</h3>
-                            <p class="store__description">₽₽ • Японская</p>
-                            <p class="store__time">25 - 35 мин</p>
-                        </article>
-                    </li>
-                    <li class="stores__item">
-                        <article class="store">
-                            <img src="image/card (4 ).png" alt="" class="store_image">
-                            <h3 class="store__title">Bar BQ Cafe — Манежная</h3>
-                            <p class="store__description">₽₽₽ • Европейская</p>
-                            <p class="store__time">30 - 40 мин</p>
+                    <li class="dishes__item">
+                        <article class="dishe">
+                            <div class="dishe__inf">
+                                <h3 class="dishe__title">Язык говяжий с хреном</h3>
+                                <p class="dishe__price">350 ₽</p>
+                            </div>
+                            <img src="image/Capture-5.png" alt="Язык говяжий с хреном" class="dishe__image">
                         </article>
                     </li>
                 </ul>
             </div>
         </section>
     </main>
-    
+
     <footer class="footer">
         <div class="container">
             <a class="footer__logo">
