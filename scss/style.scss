@@ -207,6 +207,119 @@ body {
    
 }
 
+/*restaurant*/
+
+.main{
+    padding-top: 72px;
+    .promo {
+        padding: 80px;
+        background-image: url(/image/promo.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        .promo__container{
+            display: grid;
+            grid-template-areas: 
+            "title title"
+            "kitchen time";
+            justify-content: space-between;
+            max-width: 390px;
+
+            border-radius: 2px;
+            background-color: #fff;
+            box-shadow: 0 0 16px 0 rgba(117, 117, 117, 0.2);
+            padding: 38px 38px 46px;
+            gap: 62px 90px;
+            align-items: center;
+            .promo__title {
+                grid-area: title;
+                font-size: 36px;
+                color: #1d1d1d;
+            }
+            .kitchen {
+                grid-area: kitchen;
+                font-size: 14px;
+                color: #626262;
+            }
+            .time {
+                grid-area: time;
+                border-radius: 16px;
+                background-color: #262626;
+                font-size: 13px;
+                color: #fff;
+                padding: 8px 16px;
+            }
+        }
+    }
+
+    .menu__nav {
+        border-bottom: rgba(117, 117, 117, 0.2) solid 1px;
+        .sections__menu {
+            display: flex;
+            gap: 40px;
+            padding: 32px 0 29px;
+            .sections__menu-item {
+                .sections__menu-link {
+                    color: #626262;
+                }
+            }
+        }
+    }
+
+    .dishes__title {
+        padding-top: 56px;
+        font-size: 22px;
+        line-height: 1.54545;
+        color: #1d1d1d;
+    }
+
+    .dishes__title-board{
+        display: none;
+    }
+
+    .dishes__list {
+        padding-top: 32px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 49px 16px;
+        justify-content: center;
+        .dishes__item {
+            border-radius: 2px;
+            border: rgba(117, 117, 117, 0.2) solid 1px;
+            .dishe {
+                display: flex;
+                justify-content: space-between;
+                .dishe__inf {
+                    padding: 16px;
+                    display: grid;
+                    align-content: space-between;
+                    .dishe__info{
+                        .dishe__title {
+                            line-height: 1.5;
+                            color: #1d1d1d;
+                        }
+                        .dishe__description {
+                            font-size: 13px;
+                            line-height: 1.61538;
+                            color: #626262;
+                        }
+                    }
+
+                    .dishe__price {
+                        font-size: 15px;
+                        line-height: 1.4;
+                        color: #1d1d1d;
+                    }
+                }
+                .dishe__image {
+                    height: 100%;
+                }
+            }
+        }   
+    }  
+}
+
+
 @media (max-width: 960px) {
     .container {
         padding: 0 8px;
@@ -239,11 +352,43 @@ body {
         }
        
     }
+
+    /*restaurant*/
+
+    .main{
+        .promo {
+            padding: 80px 8px;
+            .promo__container{
+                max-width: 430px;
+
+                padding: 38px 68px 46px 48px;
+                gap: 62px 66px;
+            }
+        }
+
+        .dishes__list {
+            grid-template-columns: 1fr;
+            gap: 32px;
+            .dishes__item {
+                .dishe {
+                    .dishe__inf {
+                        padding: 16px 24px;
+                    }
+                }
+            }   
+        }  
+    }
 }
 
 @media (max-width: 750px) {
+    .main{
+        .menu__nav {
+            .sections__menu {
+                gap: 20px;
+            }
+        }
+    }
     .footer {
-
         .footer__docs {
             gap: 20px;
         }
@@ -290,6 +435,76 @@ body {
             padding: 165px 16px 0;
         }
        
+    }
+
+    /*restaurant*/
+
+    .main{
+        .promo {
+            padding: 130px 8px;
+            background-image: url(/image/promomini.png);
+            max-height: 260px;
+            
+            .promo__container{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 24px 49px;
+                gap: 0;
+                max-width: 308px;
+                margin-left: auto;
+                margin-right: auto;
+                .promo__title {
+                    font-size: 24px;
+                    margin-bottom: 40px;
+                }
+                .kitchen {
+                    margin-bottom: 16px;
+                }
+                .time {
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .menu__nav {
+            display: none;
+        }
+
+        .dishes__title {
+            display: flex;
+            justify-content: center;
+            padding-top: 112px;
+            padding-bottom: 12px;
+
+        }
+
+        .dishes__title-board{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .dishes__list {
+            padding-top: 43px;
+            .dishes__item {
+                border: #fff;
+                border-bottom: rgba(117, 117, 117, 0.2) solid 1px;
+                .dishe {
+                    .dishe__inf {
+                        padding: 0;
+                        .dishe__info{
+                            .dishe__title {
+                                font-size: 14px;
+                                line-height: 1.71429;
+                            }
+                        }
+                    }
+                    .dishe__image {
+                        max-height: 102px;
+                    }
+                }
+            }   
+        }  
     }
 }
 

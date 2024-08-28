@@ -331,6 +331,130 @@ body {
   padding: 110px 16px 0;
 }
 
+/*restaurant*/
+.main {
+  padding-top: 72px;
+}
+.main .promo {
+  padding: 80px;
+  background-image: url(/image/promo.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main .promo .promo__container {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "title title" "kitchen time";
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 390px;
+  border-radius: 2px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 16px 0 rgba(117, 117, 117, 0.2);
+          box-shadow: 0 0 16px 0 rgba(117, 117, 117, 0.2);
+  padding: 38px 38px 46px;
+  gap: 62px 90px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main .promo .promo__container .promo__title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: title;
+  font-size: 36px;
+  color: #1d1d1d;
+}
+.main .promo .promo__container .kitchen {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: kitchen;
+  font-size: 14px;
+  color: #626262;
+}
+.main .promo .promo__container .time {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: time;
+  border-radius: 16px;
+  background-color: #262626;
+  font-size: 13px;
+  color: #fff;
+  padding: 8px 16px;
+}
+.main .menu__nav {
+  border-bottom: rgba(117, 117, 117, 0.2) solid 1px;
+}
+.main .menu__nav .sections__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  padding: 32px 0 29px;
+}
+.main .menu__nav .sections__menu .sections__menu-item .sections__menu-link {
+  color: #626262;
+}
+.main .dishes__title {
+  padding-top: 56px;
+  font-size: 22px;
+  line-height: 1.54545;
+  color: #1d1d1d;
+}
+.main .dishes__title-board {
+  display: none;
+}
+.main .dishes__list {
+  padding-top: 32px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 16px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 49px 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.main .dishes__list .dishes__item {
+  border-radius: 2px;
+  border: rgba(117, 117, 117, 0.2) solid 1px;
+}
+.main .dishes__list .dishes__item .dishe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main .dishes__list .dishes__item .dishe .dishe__inf {
+  padding: 16px;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+.main .dishes__list .dishes__item .dishe .dishe__inf .dishe__info .dishe__title {
+  line-height: 1.5;
+  color: #1d1d1d;
+}
+.main .dishes__list .dishes__item .dishe .dishe__inf .dishe__info .dishe__description {
+  font-size: 13px;
+  line-height: 1.61538;
+  color: #626262;
+}
+.main .dishes__list .dishes__item .dishe .dishe__inf .dishe__price {
+  font-size: 15px;
+  line-height: 1.4;
+  color: #1d1d1d;
+}
+.main .dishes__list .dishes__item .dishe .dishe__image {
+  height: 100%;
+}
+
 @media (max-width: 960px) {
   .container {
     padding: 0 8px;
@@ -354,8 +478,28 @@ body {
   .footer .footer__docs {
     gap: 80px;
   }
+  /*restaurant*/
+  .main .promo {
+    padding: 80px 8px;
+  }
+  .main .promo .promo__container {
+    max-width: 430px;
+    padding: 38px 68px 46px 48px;
+    gap: 62px 66px;
+  }
+  .main .dishes__list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .main .dishes__list .dishes__item .dishe .dishe__inf {
+    padding: 16px 24px;
+  }
 }
 @media (max-width: 750px) {
+  .main .menu__nav .sections__menu {
+    gap: 20px;
+  }
   .footer .footer__docs {
     gap: 20px;
   }
@@ -397,5 +541,73 @@ body {
   }
   .footer .footer__button-top {
     padding: 165px 16px 0;
+  }
+  /*restaurant*/
+  .main .promo {
+    padding: 130px 8px;
+    background-image: url(/image/promomini.png);
+    max-height: 260px;
+  }
+  .main .promo .promo__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 24px 49px;
+    gap: 0;
+    max-width: 308px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main .promo .promo__container .promo__title {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  .main .promo .promo__container .kitchen {
+    margin-bottom: 16px;
+  }
+  .main .promo .promo__container .time {
+    font-size: 12px;
+  }
+  .main .menu__nav {
+    display: none;
+  }
+  .main .dishes__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 112px;
+    padding-bottom: 12px;
+  }
+  .main .dishes__title-board {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main .dishes__list {
+    padding-top: 43px;
+  }
+  .main .dishes__list .dishes__item {
+    border: #fff;
+    border-bottom: rgba(117, 117, 117, 0.2) solid 1px;
+  }
+  .main .dishes__list .dishes__item .dishe .dishe__inf {
+    padding: 0;
+  }
+  .main .dishes__list .dishes__item .dishe .dishe__inf .dishe__info .dishe__title {
+    font-size: 14px;
+    line-height: 1.71429;
+  }
+  .main .dishes__list .dishes__item .dishe .dishe__image {
+    max-height: 102px;
   }
 }
